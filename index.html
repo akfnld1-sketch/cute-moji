@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>업데이트 중 · 감정 이모티콘</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top, #1f2933 0, #020617 55%, #000 100%);
+      color: #e5e7eb;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .wrap {
+      max-width: 500px;
+      padding: 10px;
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    .logo {
+      font-size: 26px;
+      letter-spacing: 0.18em;
+      opacity: 0.85;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      opacity: 0.75;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .dots {
+      display: inline-flex;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      background: #fca5a5;
+      opacity: 0.35;
+      border-radius: 50%;
+      animation: bounce 1.4s infinite ease-in-out;
+    }
+
+    .dot:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+    .dot:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); opacity: 0.3; }
+      50% { transform: translateY(-6px); opacity: 1; }
+    }
+
+    .note {
+      font-size: 15px;
+      opacity: 0.6;
+      animation: fadeInOut 2s infinite alternate ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInOut {
+      0% { opacity: 0.4; }
+      100% { opacity: 0.85; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="logo">EMOTION EMOTICON</div>
+
+    <div class="title">업데이트 중입니다</div>
+
+    <p class="subtitle">
+      조금 더 예쁜 감정, 조금 더 편한 기능을 위해<br/>
+      조용히 손보고 있어요.
+    </p>
+
+    <div class="dots">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <p class="note">잠시 후 새로워진 모습으로 만나요.</p>
+  </div>
+</body>
+</html>
